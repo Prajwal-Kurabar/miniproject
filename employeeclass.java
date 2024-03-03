@@ -1,0 +1,78 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+class Employee {
+    private String name;
+    private int id;
+    private String department;
+    private String joinDate; // Date when employee joined
+    private String leavingDate; // Date when employee left (if applicable)
+    private String address; // Address of the employee
+    private String designation; // Designation of the employee
+    private String phoneNumber; // Phone number of the employee
+
+    public Employee(String name, int id, String department, String joinDate, String address, String designation, String phoneNumber) {
+        this.name = name;
+        this.id = id;
+        this.department = department;
+        this.joinDate = joinDate;
+        this.leavingDate = ""; // Initially, no leaving date
+        this.address = address;
+        this.designation = designation;
+        this.phoneNumber = phoneNumber;
+    }
+
+    // Getters and setters
+    public String getName() {
+        return name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public String getJoinDate() {
+        return joinDate;
+    }
+
+    public String getLeavingDate() {
+        return leavingDate;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getDesignation() {
+        return designation;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public void setLeavingDate(String leavingDate) {
+        this.leavingDate = leavingDate;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setDesignation(String designation) {
+        this.designation = designation;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+}
